@@ -51,6 +51,7 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             # game_is_on = False
             reset()
+    #TODO: Add keypress to continue playing or q to quit
 
 snake.died()
 screen.exitonclick()
