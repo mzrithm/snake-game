@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+from time import sleep
 
 UP = 90
 DOWN = 270
@@ -73,3 +74,25 @@ class Snake:
         ending.hideturtle()
         ending.color("white")
         ending.write("GAME OVER", align="center", font=("Arial", 30, "bold"))
+
+    def lost_life(self):
+        death = Turtle()
+        death.penup()
+        death.hideturtle()
+        death.color("white")
+        death.write("SNAKE DIED", align="center", font=("Arial", 30, "bold"))
+        sleep(.5)
+        death.clear()
+        death.write("PRESS ANY KEY", align="center", font=("Arial", 30, "bold"))
+        death.clear()
+        death.goto(1000, 1000)
+
+
+    def reset(self):
+        for seg in self.segment_list:
+            seg.hideturtle()
+            seg.goto(1000, 1000)
+        self.segment_list.clear()
+        self.create_snake()
+        self.head = self.segment_list[0]
+

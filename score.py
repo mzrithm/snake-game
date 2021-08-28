@@ -17,7 +17,7 @@ class Score(Turtle):
     def broadcast(self):
         self.clear()
         self.penup()
-        score_message = f"Score: {self.value} High score: {self.high_score}"
+        score_message = f"Score: {self.value}          High score: {self.high_score}"
         self.setposition(0, 260)
         self.pendown()
         self.write(score_message, False, align="center", font=("Arial", 20, "normal"))

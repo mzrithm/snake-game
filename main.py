@@ -20,6 +20,13 @@ food = Food()
 score = Score()
 score.broadcast()
 
+
+def reset():
+    score.reset()
+    score.broadcast()
+    snake.lost_life()
+    snake.reset()
+
 while game_is_on:
     screen.update()
     time.sleep(0.1)
@@ -33,14 +40,17 @@ while game_is_on:
         score.broadcast()
     # Detect collision with wall
     if snake.head.xcor() >= 295 or snake.head.xcor() <= -295:
-        game_is_on = False
+        # game_is_on = False
+        reset()
     if snake.head.ycor() >= 295 or snake.head.ycor() <= -295:
-        game_is_on = False
+        # game_is_on = False
+        reset()
     # Detect collision with tail
     for segment in snake.segment_list[1:]:
-    #Check every segment except first, aka. the head
+        # Check every segment except first, aka. the head
         if snake.head.distance(segment) < 10:
-            game_is_on = False
+            # game_is_on = False
+            reset()
 
 snake.died()
 screen.exitonclick()
