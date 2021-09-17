@@ -26,4 +26,4 @@ The snake cannot touch the "walls" or its own body. If it does, **you lose!** ðŸ
 
 **The longer you play, the more challenging the game becomes!**
 
-![Screen shot of the game ending after the player won 4 points and died hitting the wall.](https://github.com/mzrithm/snake-game/blob/f3c77b716712e90a3b62a219a646ab8ef7d1261a/screenshots/Screen%20Shot%202021-08-26%20at%204.06.29%20PM.png)
+![Screen shot of the game ending after the player won 4 points and died hitting the wall.](https://github.com/mzrithm/snake-game/blob/2a194ac56f16ebf107e16fd7cd4344943a843521/screenshots/Screen%20Shot%202021-09-17%20at%203.18.04%20PM.png)
