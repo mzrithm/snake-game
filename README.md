@@ -1,4 +1,4 @@
-# snake-game
+# 🫐 🐍 snake-game
 
 This is my version of the classic **Snake Game**.
 
