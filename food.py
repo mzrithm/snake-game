@@ -21,11 +21,4 @@ class Food(Turtle):
         self.goto(x, y)
 
 
-    # def food_pickup(self, snake_list):
-    #     head = snake_list[0]
-    #     position = head.position()
-    #     if position == self.position():
-    #         return 1
-
-
 
