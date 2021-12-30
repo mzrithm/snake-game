@@ -10,7 +10,9 @@ def reset():
     score.broadcast()
     snake.lost_life()
     response = screen.textinput("Game Over", "Would you like to play again? (Y/N)")
-    if response is None or response.lower() == "n":
+    if response is None:
+        snake.died()
+    elif response.lower() == "n":
         snake.died()
     else:
         snake.reset()
