@@ -83,8 +83,8 @@ class Snake:
         death.write("SNAKE DIED", align="center", font=("Arial", 30, "bold"))
         sleep(.5)
         death.clear()
-        death.write("PRESS ANY KEY", align="center", font=("Arial", 30, "bold"))
-        death.clear()
+        # death.write("PRESS ANY KEY", align="center", font=("Arial", 30, "bold"))
+        # death.clear()
         death.goto(1000, 1000)
 
 
